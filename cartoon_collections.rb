@@ -17,10 +17,10 @@ end
 def find_the_cheese(strarray)
   results = nil
   cheese_types = ["cheddar", "gouda", "camembert"]
-  strarray.map.with_index do |string, index|
+  strarray.each do |string|
     if cheese_types.include?(string)
       results = true
-      return string[index]
+      return string
     end
   end
   if results == false
