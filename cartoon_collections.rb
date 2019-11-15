@@ -20,7 +20,7 @@ def find_the_cheese(strarray)
   strarray.map.with_index do |string, index|
     if strarray.include?(cheese_types)
       results = true
-      return string[index]
+      string[index]
     end
   end
   if results == false
