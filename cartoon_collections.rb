@@ -15,15 +15,11 @@ def long_planeteer_calls(calls)
 end
 
 def find_the_cheese(strarray)
-  # results = nil
   cheese_types = ["cheddar", "gouda", "camembert"]
   strarray.each do |string|
     if cheese_types.include?(string)
-      # results = true
       return string
     end
   end
-  # if results == false
-    return nil
-  # end
+  return nil
 end
